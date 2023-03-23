@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial=scale=1.0">
+    <title> Eco Footprint</title>
+
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                CarbonTrak
+            </h1>
+            <p id="description">
+                Find out your carbon footprint today!
+            </p>
+        </header>
+    <form action="" id="survey-form">
+
+
+        <!-- select section -->
+        <div class="form-group">
+            <p id="quest">Dropdown Question format</p>
+            <select name="role" required id="dropdown" class="formControl">
+                <option value disabled selected >Select ___</option>
+                <option value="option 1">options</option>
+                <option value="option 2">options</option>
+                <option value="option 3">options</option>
+                <option value="option 4">options</option>
+            </select>
+        </div>
+        <!-- end of select section -->
+
+        <!-- radio button section -->
+        <div class="form-group">
+            <p id="quest">Multiple Choice Question format </p>
+            <label for="">
+                <input type="radio" name="source" value="option 1"
+                class="inputRadio"
+                checked> options
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="option 2"
+                class="inputRadio"
+                >options
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="option 3"
+                class="inputRadio"
+                > options
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="option 4"
+                class="inputRadio"
+                > options
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="option 5"
+                class="inputRadio"
+                > options
+            </label>
+        </div>
+        <!-- end of radio button -->
+
+        <!-- Checkbox section -->
+        <div class="form-group">
+            <p id="quest"> Select All question format </p>
+            <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="option 1"> options
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="option 2"> options
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="option 3">  options
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="option 4"> options
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="checkbox" value="option 5"> options
+            </label>
+        </div>
+        <!-- End of checkbox section -->
+
+        <!-- Textarea section -->
+        <div class="form-group">
+            <p id="quest">Typing Question format</p>
+            <textarea name="feedback"  cols="15" rows="1"  id="feedback" class="textarea" placeholder="Type here"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="btn">Submit</button>
+        </div>
+    </form>
+     
+</body>
+</html>
