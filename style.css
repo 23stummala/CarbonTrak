@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 :root{
     --color-white:#f3f3f3;
     --color-darkblue:#796ec8;
     --color-darkblue-alpha:rgba(10, 125, 10, 0.602);
-    --color-green:#21eb6e;
+    --color-green:#30cb6b;
 }
 *,*::before,*::after{
     box-sizing: border-box;
 }
 body{
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Amatic SC', cursive;
+    /*font-family: 'Poppins',sans-serif;*/
     font-size: 1rem;
     font-weight: 400;
     line-height: 2;
@@ -26,7 +27,9 @@ body::before{
     width: 100%;
     z-index: -1;
     background: var(--color-darkblue);
-    background-image: linear-gradient(100deg,rgba(74, 132, 69, 0.8),rgba(124, 192, 147, 0.8)),url(/backround.jpeg);
+    /*background-image: linear-gradient(100deg,rgba(74, 132, 69, 0.8),rgba(124, 192, 147, 0.8)),url(/backround.jpeg);*/
+    background-image: linear-gradient(100deg,rgba(31, 158, 116, 0.8),rgba(58, 226, 114, 0.8)),url(https://images.unsplash.com/photo-1462717909674-1e3e107e231b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFlc3RoZXRpYyUyMGZvcmVzdHxlbnwwfHwwfHw%3D&w=1000&q=80
+);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -66,6 +69,12 @@ input,button,select,textarea{
     width: 100%;
     margin: 3.125rem auto 0 auto;
     padding:1.8rem 1rem;
+}
+.container2{
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    padding: 1.8rem 1rem;
+    align-items: center;
 }
 
 .header{
@@ -114,13 +123,16 @@ form{
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
 }
+
+
+ 
 .formControl:focus{
     border-color:blue;
     outline: 0;
     box-shadow:0 0 0 0.2rem rgba(0,123,255,0.25)
 }
-.inputRadio,
-.checkbox
+/*.checkbox*/
+.inputRadio
 {
     display: inline-block;
     margin-right: 0.625rem;
@@ -139,16 +151,17 @@ form{
 .btn{
     display: block;
     width: 100%;
-    padding:0.5rem 0.75rem;
-    background: var(--color-green);
-    color: inherit;
+    margin-top: 30px;
+    /*padding:0.5rem 0.75rem;*/
+    /*background: var(--color-green);*/
+    color: var(--color-green);
     border-radius: 15px;
     cursor: pointer;
     outline: none;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: rgb(88, 67, 25);
-    border: none;
+    border: 'none';
 }
 
 @media (min-width:576px){
@@ -161,3 +174,147 @@ form{
         max-width: 760px;
     }
 }
+
+.q0{
+    display: block
+}
+.q1 {
+    display: none 
+}
+.q2 {
+    display: none
+}
+.q3 {
+    display: none
+}
+
+.q4 {
+    display: none
+}
+
+.q5 {
+    display: none
+}
+
+.q6 {
+    display: none
+}
+
+.q7 {
+    display: none
+}
+.q8 {
+    display: none
+}
+.q9 {
+    display: none
+}
+
+.q10 {
+    display: none
+}
+
+.q11 {
+    display: none
+}
+.q12 {
+    display: none
+}
+.landingpage {
+    display: none
+}
+
+
+#next0{
+    display: block
+}
+
+#next1{
+    display: none
+}
+
+#next2{
+    display: none
+}
+
+#next3{
+    display: none
+}
+
+#next4{
+    display: none
+}
+
+#next5{
+    display: none
+}
+
+#next6{
+    display: none
+}
+
+#next7{
+    display: none
+}
+
+#next8{
+    display: none
+}
+
+#next9{
+    display: none
+}
+
+#next10{
+    display: none
+}
+
+#next11{
+    display: none
+}
+
+#next12{
+    display: none
+}
+
+#back1{
+    display: none
+}
+
+#back2{
+    display: none
+}
+#back3{
+    display: none
+}
+#back4{
+    display: none
+}
+#back5{
+    display: none
+}
+#back6{
+    display: none
+}
+#back7{
+    display: none
+}
+#back8{
+    display: none
+}
+#back9{
+    display: none
+}
+#back10{
+    display: none
+}
+#back11{
+    display: none
+}
+#back12{
+    display: none
+}
+#back13{
+    display: none
+}
+

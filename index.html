@@ -1,100 +1,538 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial=scale=1.0">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
     <title> Eco Footprint</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link rel = "stylesheet" href = "style.css">
 </head>
 
 <body>
-    <div class="container ">
+    <div class="container">
         <header class="header">
             <h1 id="title">
                 CarbonTrak
             </h1>
-            <p id="description">
-                Find out your carbon footprint today!
-            </p>
+            <h3 id="description">
+                Find your carbon footprint!
+            </h3>
         </header>
-    <form action="" id="survey-form">
+        <form action="" id="survey-form">
 
 
-        <!-- select section -->
-        <div class="form-group">
-            <p id="quest">Dropdown Question format</p>
-            <select name="role" required id="dropdown" class="formControl">
-                <option value disabled selected >Select ___</option>
-                <option value="option 1">options</option>
-                <option value="option 2">options</option>
-                <option value="option 3">options</option>
-                <option value="option 4">options</option>
-            </select>
-        </div>
-        <!-- end of select section -->
+            <div class="survey">
+                <!-- radio button section -->
+                <!--<div class="q1">
+                <p id="quest">Multiple Choice Format </p>
+                <label for="">
+                    <input type="radio" name="source" value="option1"
+                    class="inputRadio1"
+                    checked>  derj
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option2"
+                    class="inputRadio2"
+                    >  options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option3"
+                    class="inputRadio3"
+                    >  options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option4"
+                    class="inputRadio4"
+                    >  options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option5"
+                    class="inputRadio5"
+                    >  options
+                </label>
+            </div>-->
+                <!-- end of radio button -->
 
-        <!-- radio button section -->
-        <div class="form-group">
-            <p id="quest">Multiple Choice Question format </p>
-            <label for="">
-                <input type="radio" name="source" value="option 1"
-                class="inputRadio"
-                checked> options
-            </label>
-            <label for="">
-                <input type="radio" name="source" value="option 2"
-                class="inputRadio"
-                >options
-            </label>
-            <label for="">
-                <input type="radio" name="source" value="option 3"
-                class="inputRadio"
-                > options
-            </label>
-            <label for="">
-                <input type="radio" name="source" value="option 4"
-                class="inputRadio"
-                > options
-            </label>
-            <label for="">
-                <input type="radio" name="source" value="option 5"
-                class="inputRadio"
-                > options
-            </label>
-        </div>
-        <!-- end of radio button -->
 
-        <!-- Checkbox section -->
-        <div class="form-group">
-            <p id="quest"> Select All question format </p>
-            <label for="">
-                <input type="checkbox" name="prefer" class="checkbox" value="option 1"> options
-            </label>
-            <label for="">
-                <input type="checkbox" name="prefer" class="checkbox" value="option 2"> options
-            </label>
-            <label for="">
-                <input type="checkbox" name="prefer" class="checkbox" value="option 3">  options
-            </label>
-            <label for="">
-                <input type="checkbox" name="prefer" class="checkbox" value="option 4"> options
-            </label>
-            <label for="">
-                <input type="checkbox" name="prefer" class="checkbox" value="option 5"> options
-            </label>
-        </div>
-        <!-- End of checkbox section -->
+                <!--<div class="container2">
+            <div class="starterpage">
+             <h3 id="description">
+                "The environment and the economy are really both 
+                two sides of the same coin. If we cannot sustain the 
+                environment, we cannot sustain ourselves." 
+                - Wangari Maathan
+            </h3>
+            </div>
+            </div>
+        -->
+                <div class="q0">
 
-        <!-- Textarea section -->
-        <div class="form-group">
-            <p id="quest">Typing Question format</p>
-            <textarea name="feedback"  cols="15" rows="1"  id="feedback" class="textarea" placeholder="Type here"></textarea>
-        </div>
-        <div class="form-group">
-            <button type="submit" id="submit" class="btn">Submit</button>
-        </div>
-    </form>
-     
+                    <p class="q0">"The environment and the economy are really both
+                        two sides of the same coin. If we cannot sustain the
+                        environment, we cannot sustain ourselves."
+                        - Wangari Maathan </p>
+
+
+                </div>
+                <form>
+                    <div class="q1">
+                        <p> Question 1</p>
+                        <p id="quest"> How many people live in your household?</p>
+                        <div class="input-element">
+                            <input name="householdMembers" id="Number1" type="text" required />
+                        </div>
+                    </div>
+
+
+                    <div class="q2">
+                        <p> Question 2</p>
+                        <p id="quest">Do you drive an electric car?</p>
+                        <label for="">
+                            <input id="Number2-1" type="radio" name="electriccar" value="0" class="inputRadio1" checked>
+                            Yes
+                        </label>
+                        <label for="">
+                            <input id="Number2-2" type="radio" name="electriccar" value="0" class="inputRadio2"> No
+                        </label>
+                    </div>
+
+                    <div class="q3">
+                        <p> Question 3</p>
+                        <p id="quest">What is your car's miles per gallon?</p>
+                        <div class="input-element">
+                            <input id="Number3" type="text" required />
+                        </div>
+                    </div>
+
+                    <div class="q4">
+                        <p> Question 4</p>
+                        <p id="quest">On average, how many miles do you travel per day?</p>
+                        <div class="input-element">
+                            <input id="Number4" type="text" required />
+                        </div>
+                    </div>
+
+                    <div class="q5">
+                        <p> Question 5</p>
+                        <p id="quest">What dietary measure do you follow? </p>
+                        <label for="">
+                            <input id="Number5-1" type="radio" name="diet" value="5.5" class="inputRadio1" checked>
+                            Heavy meat eater
+                        </label>
+                        <label for="">
+                            <input id="Number5-2" type="radio" name="diet" value="3.3" class="inputRadio2"> Average meat
+                            eater
+                        </label>
+                        <label for="">
+                            <input id="Number5-3" type="radio" name="diet" value="1.8" class="inputRadio3"> Vegetarian
+                        </label>
+                        <label for="">
+                            <input id="Number5-4" type="radio" name="diet" value="1.5" class="inputRadio4"> Vegan
+                        </label>
+                    </div>
+
+                    <div class="q6">
+                        <p> Question 6</p>
+                        <p id="quest">How many kilowatts of electricity do you use per day?</p>
+                        <p id="quest">(One light bulb uses 0.42 kWh)</p>
+
+                        <input id="Number6-1" type="text" required>
+
+                        <label for="">
+                            <input id="Number6-2" type="radio" name="kilowatts" value="0" class="inputRadio2"> I don't
+                            know
+                        </label>
+                    </div>
+
+                    <div class="q7">
+                        <p> Question 7</p>
+                        <p id="quest">On average, how much electricity do you use per month? </p>
+                        <label for="">
+                            <input id="Number7-1" type="radio" name="electricity" value="1295" class="inputRadio1"
+                                checked> I use electricity consistently throughout the month
+                        </label>
+                        <label for="">
+                            <input id="Number7-2" type="radio" name="electricity" value="864" class="inputRadio2"
+                            > I somewhat use electricity throughout the month
+                        </label>
+                        <label for="">
+                            <input id="Number7-3" type="radio" name="electricity" value="432" class="inputRadio3"> I
+                            almost never use electricity
+                        </label>
+                    </div>
+
+                    <div class="q8">
+                        <p> Question 8</p>
+                        <p id="quest">Approximately, how many pounds of trash does your household produce per week?</p>
+                        <div class="input-element">
+                            <input id="Number8" type="text" required />
+                        </div>
+                    </div>
+
+                    <div class="q9">
+                        <p> Question 9</p>
+                        <p id="quest">Do you recycle consistently? </p>
+                        <label for="">
+                            <input id="Number9-1" type="radio" name="recycle" value="0" class="inputRadio1" checked> I
+                            recycle consistently
+                        </label>
+                        <label for="">
+                            <input id="Number9-2" type="radio" name="recycle" value="0" class="inputRadio2"> I recycle
+                            sometimes
+                        </label>
+                        <label for="">
+                            <input id="Number9-3" type="radio" name="recycle" value="0" class="inputRadio3"> I don't
+                            recycle
+                        </label>
+                    </div>
+
+
+
+                    <div class="q10">
+                        <p> Question 10</p>
+                        <p id="quest">During the winter, how many hours a day do you use heating? </p>
+
+                        <input id="Number10" type="text" required>
+                        <!--<p id="dropdown1">During the winter, how many hours a day do you use heating? </p>
+                        <select name="monthsheating" required id="dropdown1" class="formControl">
+                            <option value disabled selected>Number of Hours</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+
+                        </select>-->
+
+                    </div>
+
+                    <div class="q11">
+                        <p> Question 11</p>
+                        <p id="quest">How many months a year do you use air conditoning in your house? </p>
+
+                        <input id="Number11" type="text" required>
+                        <!--<p id="dropdown2">How many months a year do you use air conditoning in your house? </p>
+                        <select name="monthsAC" required id="dropdown2" class="formControl">
+                            <option value disabled selected>Select current role</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+
+                        </select>-->
+                    </div>
+
+                    <div class="q12">
+                        <p> Question 12</p>
+                        <p id="quest">During those months, how many hours of air conditioning do you use per day? </p>
+
+                        <input id="Number12" type="text" required>
+                        <!--<p id="dropdown3">During those months, how many hours of air conditioning do you use per day?>
+                        </p>
+                        <select name="daysAC" required id="dropdown3" class="formControl">
+                            <option value disabled selected>Select current role</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+
+                        </select>-->
+                    </div>
+                    
+                </form>
+
+
+
+
+
+
+
+                <div class="landingpage">
+                    <header class="header">
+                        <h1>Total Carbon Emissions: </h1>
+                        <h1 id="totalCarbonFootprint"></h1> <h1>Metric Tons of CO2</h1>
+                        
+                        <p id="recycle"></p>
+                        <p>- The average Carbon Footprint per person is 4 metric tons of CO2 per year. </p>
+                        <p id="response"></p>
+                        <p>- Reduce your carbon footprint by using energy-efficient appliances, 
+                        turning off lights when not in use, reducing water usage, and recycling.</p>
+                </header>
+                </div>
+        
+
+            
+
+
+                <!--<div class="q1">
+                <p id="quest">How often do you use heating in your house? </p>
+                <input type="range" min="1" max="100" value="50"
+                 class="myslider" id="sliderRange">
+              </div>-->
+
+                <!-- Checkbox section -->
+                <!--<div class="q2">
+                <p id="quest">Multiple Choice Question format </p>
+                <label for="">
+                    <input type="radio" name="source" value="option1"
+                    class="inputRadio"
+                    checked> hello
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option2"
+                    class="inputRadio"
+                    >options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option3"
+                    class="inputRadio"
+                    > options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option4"
+                    class="inputRadio"
+                    > options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option5"
+                    class="inputRadio"
+                    > options
+                </label>
+            </div>-->
+                <!-- End of checkbox section -->
+
+                <!-- Textarea section -->
+                <!--<div class="q3">
+                <p id="quest">Multiple Choice Question format </p>
+                <label for="">
+                    <input type="radio" name="source" value="option1"
+                    class="inputRadio"
+                    checked> options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option2"
+                    class="inputRadio"
+                    >options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option3"
+                    class="inputRadio"
+                    > options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option4"
+                    class="inputRadio"
+                    > options
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="option5"
+                    class="inputRadio"
+                    > options
+                </label>
+            </div>-->
+                <!--End of Textarea section-->
+
+                <!--start of input number-->
+                <!--<div class="q4">
+                <p id="quest">Free Response:</p>
+                <div class="input-element">
+                    <input id="Number" type="text" required/>
+                </div>
+             </div>-->
+                <!--End of input number-->
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Start" id="next0" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next1" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next2" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next3" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next4" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next5" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next6" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next7" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next8" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next9" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next10" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Next" id="next11" class="nextbtn btn" checked>
+                    </label>
+                </div>
+                <div class="nextbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Submit" id="next12" class="nextbtn btn" checked>
+                    </label>
+                </div>
+
+
+
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back1" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back2" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back3" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back4" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back5" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back6" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back7" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back8" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back9" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back10" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back11" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Back" id="back12" class="backbtn btn" checked>
+                    </label>
+                </div>
+                <div class="backbtn btn">
+                    <label for="">
+                        <input type="button" name="source" value="Restart" id="back13" class="backbtn btn" checked>
+                    </label>
+                </div>
+
+
+
+
+
+            
+
+                <script src="app.js"></script>
+            </div>
+        </form>
+
+
 </body>
+
 </html>
